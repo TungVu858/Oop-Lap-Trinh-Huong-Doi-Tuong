@@ -31,9 +31,9 @@
         this.toString = function () {
             return this.day + "/" + this.month + "/" + this.year;
         }
-        this.setDate = function (day,month,year) {
+        this.setDate = function (day, month, year) {
             this.day = day;
-            this.month =month;
+            this.month = month;
             this.year = year;
         }
     };
@@ -46,8 +46,8 @@
     date.setDay('1');
     date.setMonth('3');
     date.setYear('2020');
-    document.write(date.getDay() + "/" +date.getMonth() + "/" + date.getYear() + "<br>");
-    date.setDate(10,20,2020)
+    document.write(date.getDay() + "/" + date.getMonth() + "/" + date.getYear() + "<br>");
+    date.setDate(10, 20, 2020)
     document.write(date.toString());
 
 </script>

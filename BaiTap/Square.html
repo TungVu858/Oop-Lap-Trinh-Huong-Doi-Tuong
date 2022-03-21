@@ -30,14 +30,12 @@
     // }
 
     function CreateSquare(a, b) {
-        let dai = a;
-        let rong = b;
         // let color = getRandomColor();
         let ct = document.getElementById('ve').getContext('2d');
         let x = Math.random() * window.innerWidth;
         let y = Math.random() * window.innerHeight;
         // ct.fillStyle = color;
-        ct.fillRect(x, y, dai, rong);
+        ct.fillRect(x, y, a, b);
     }
     CreateSquare(150, 50);
     let square = new Rectangle(120, 70);
