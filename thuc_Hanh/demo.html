@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function Person(first, last, age, gender, interests) {
+    //     this.name = {
+    //         first,
+    //         last
+    //     };
+    //     this.age = age;
+    //     this.gender = gender;
+    //     this.interests = interests;
+    //     this.bio = function() {
+    //         alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+    //     };
+    //     this.greeting = function() {
+    //         alert('Hi! I\'m ' + this.name.first + '.');
+    //     };
+    // };
+    let person1 = new Object();
+    person1.name = 'Chris';
+    person1.age =38;
+    person1.greeting = function () {
+        alert('Hi! i\m' + this.name)
+    };
+    document.write(person1.name);
+</script>
+</body>
+</html>
