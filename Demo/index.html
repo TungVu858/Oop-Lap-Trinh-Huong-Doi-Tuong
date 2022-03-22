@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="anh" src="img.png" style="position: absolute;top: 200px;left: 100px;width: 80px">
+<script>
+    let img = document.getElementById('anh');
+    let speed = 1;
+    function leftArrow() {
+        img.style.left = parseInt(img.style.left) - speed +'px';
+        requestAnimationFrame(leftArrow);
+    }
+    function rightArrow() {
+        img.style.left = parseInt(img.style.left) + speed +'px';
+        requestAnimationFrame(rightArrow);
+    }
+    function upArrow() {
+        img.style.top = parseInt(img.style.top) - speed +'px';
+        requestAnimationFrame(upArrow);
+    }
+    function downArrow() {
+        img.style.top = parseInt(img.style.top) + speed +'px';
+        requestAnimationFrame(downArrow);
+    }
+
+    function MoveSelecttion(evt) {
+        switch (evt.keyCode){
+            case 37:
+                leftArrow();
+                break;
+            case 39:
+                rightArrow();
+                break;
+            case 38:
+                upArrow();
+                break;
+            case 40:
+                downArrow();
+        }
+    }
+    function chay() {
+        window.addEventListener('keydown',MoveSelecttion);
+    }
+    chay();
+</script>
+</body>
+</html>
